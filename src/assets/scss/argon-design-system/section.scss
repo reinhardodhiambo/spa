@@ -22,7 +22,7 @@
 // Hero sections
 .section-hero {
     @include media-breakpoint-up(md) {
-        min-height: 500px;
+        min-height: 300px;
     }
 }
 
@@ -111,7 +111,7 @@
     }
 
     .shape-default {
-        background: linear-gradient(150deg, shapes-default-color("step-1-gradient-bg") 15%, shapes-default-color("step-2-gradient-bg") 70%, shapes-default-color("step-3-gradient-bg") 94%);
+        background: linear-gradient(150deg, #f8dc77 15%,  #765431 70%, #08080e 94%);
 
          :nth-child(1) {
             background: shapes-default-color("span-1-bg");
@@ -297,7 +297,7 @@
         }
 
         &.shape-default {
-            background: linear-gradient(150deg, shapes-default-color("step-1-gradient-bg") 15%, shapes-default-color("step-2-gradient-bg") 70%, shapes-default-color("step-3-gradient-bg") 94%);
+            background: linear-gradient(150deg, #f8dc77 15%, #765431 70%, #08080e 94%);
         }
 
         &.shape-light {

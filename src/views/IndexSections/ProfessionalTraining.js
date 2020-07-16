@@ -25,7 +25,7 @@ class ProffesionlTraining extends React.Component {
     return (
       <>
         <section
-          className="section section-components pb-0"
+          className="section section-components pb-0 bg-secondary"
           id="section-components"
         >
           <Container>

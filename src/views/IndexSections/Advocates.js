@@ -19,6 +19,7 @@ import React from "react";
 
 // reactstrap components
 import {Button, Container, Row, Col, Card, CardBody, TabContent, TabPane} from "reactstrap";
+import CardImg from "reactstrap/es/CardImg";
 
 class Advocates extends React.Component {
     render() {
@@ -36,6 +37,11 @@ class Advocates extends React.Component {
                                     <span>Advocates</span>
                                 </h2>
                                 <Card className="shadow">
+                                  {/*  <CardImg  alt="..."
+                                              className="img-fluid rounded-circle shadow"
+                                              src={require("assets/img/theme/team-2-800x800.jpg")}
+                                              style={{ width: "150px" }}>
+                                    </CardImg>*/}
                                     <CardBody>
                                         <small className="text-uppercase text-muted font-weight-bold">
                                             Ben Makasi Simiyu

@@ -124,7 +124,7 @@ class DemoNavbar extends React.Component {
                                             <div className="dropdown-menu-inner">
                                                 <Media
                                                     className="d-flex align-items-center"
-                                                    href="/"
+                                                    to="/"
                                                     target="_blank"
                                                 >
                                                     <div
@@ -135,12 +135,6 @@ class DemoNavbar extends React.Component {
                                                         <h6 className="heading text-primary mb-md-1">
                                                             Mission Statement
                                                         </h6>
-                                                        <p className="description d-none d-md-inline-block mb-0">
-                                                            Simiyu and Partners Advocates’ LLP mission is to render as
-                                                            well as deliver professional legal services of the highest
-                                                            standards with the utmost speed and to secure positive
-                                                            results at competitive costs to its clients.
-                                                        </p>
                                                     </Media>
                                                 </Media>
                                                 <Media
@@ -156,10 +150,6 @@ class DemoNavbar extends React.Component {
                                                         <h6 className="heading text-primary mb-md-1">
                                                             Professional Training
                                                         </h6>
-                                                        <p className="description d-none d-md-inline-block mb-0">
-                                                            Learn more about colors, typography, icons and the
-                                                            grid system we used for Argon.
-                                                        </p>
                                                     </Media>
                                                 </Media>
                                                 <Media
@@ -175,10 +165,6 @@ class DemoNavbar extends React.Component {
                                                         <h5 className="heading text-warning mb-md-1">
                                                             Facilities/Equipments
                                                         </h5>
-                                                        <p className="description d-none d-md-inline-block mb-0">
-                                                            Browse our 50 beautiful handcrafted components
-                                                            offered in the Free version.
-                                                        </p>
                                                     </Media>
                                                 </Media>
                                                 <Media
@@ -188,16 +174,12 @@ class DemoNavbar extends React.Component {
                                                 >
                                                     <div
                                                         className="icon icon-shape bg-gradient-warning rounded-circle text-white">
-                                                        <i className="ni ni-ui-04"/>
+                                                        <i className="ni ni-time-alarm"/>
                                                     </div>
                                                     <Media body className="ml-3">
                                                         <h5 className="heading text-warning mb-md-1">
                                                             Turnaround Time
                                                         </h5>
-                                                        <p className="description d-none d-md-inline-block mb-0">
-                                                            Browse our 50 beautiful handcrafted components
-                                                            offered in the Free version.
-                                                        </p>
                                                     </Media>
                                                 </Media>
                                             </div>
@@ -251,6 +233,18 @@ class DemoNavbar extends React.Component {
                                                 Taxation
                                             </DropdownItem>
                                         </DropdownMenu>
+                                    </UncontrolledDropdown>
+                                    <UncontrolledDropdown nav>
+                                        <DropdownToggle nav>
+                                            <i className="ni ni-collection d-lg-none mr-1"/>
+                                            <span className="nav-link-inner--text">Some Cases Handled</span>
+                                        </DropdownToggle>
+                                    </UncontrolledDropdown>
+                                    <UncontrolledDropdown nav>
+                                        <DropdownToggle nav>
+                                            <i className="ni ni-collection d-lg-none mr-1"/>
+                                            <span className="nav-link-inner--text">Customer Care</span>
+                                        </DropdownToggle>
                                     </UncontrolledDropdown>
                                 </Nav>
                             </UncontrolledCollapse>
