@@ -45,6 +45,12 @@ import Carousel from "./IndexSections/Carousel.js";
 import Icons from "./IndexSections/Icons.js";
 import Login from "./IndexSections/Login.js";
 import Download from "./IndexSections/Download.js";
+import MissionStatement from "./IndexSections/MissionStatement";
+import ProffesionlTraining from "./IndexSections/ProfessionalTraining";
+import FacilitiesEquipments from "./IndexSections/FacilitiesEquipments";
+import TurnaroundTime from "./IndexSections/TurnaroundTime";
+import Advocates from "./IndexSections/Advocates";
+import SupportStaff from "./IndexSections/SupportStaff";
 
 class Index extends React.Component {
   componentDidMount() {
@@ -58,7 +64,12 @@ class Index extends React.Component {
         <DemoNavbar />
         <main ref="main">
           <Hero />
-          <Buttons />
+          <MissionStatement />
+          <ProffesionlTraining/>
+          <FacilitiesEquipments/>
+          <TurnaroundTime/>
+          <Advocates/>
+          <SupportStaff/>
           <Inputs />
           <section className="section">
             <Container>
