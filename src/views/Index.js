@@ -52,6 +52,7 @@ import TurnaroundTime from "./IndexSections/TurnaroundTime";
 import Advocates from "./IndexSections/Advocates";
 import SupportStaff from "./IndexSections/SupportStaff";
 import PracticeArea from "./IndexSections/PracticeArea";
+import Contact from "./IndexSections/Contact";
 
 class Index extends React.Component {
   componentDidMount() {
@@ -72,6 +73,7 @@ class Index extends React.Component {
           <Advocates/>
           <SupportStaff/>
           <PracticeArea/>
+          <Contact/>
         </main>
         <CardsFooter />
       </>

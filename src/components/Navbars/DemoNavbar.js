@@ -110,10 +110,9 @@ class DemoNavbar extends React.Component {
                                 </div>
                                 <Nav className="navbar-nav-hover align-items-lg-center" navbar>
                                     <UncontrolledDropdown nav>
-                                        <DropdownToggle nav>
-                                            <i className="ni ni-ui-04 d-lg-none mr-1"/>
-                                            <span className="nav-link-inner--text">Home</span>
-                                        </DropdownToggle>
+                                        <NavLink to="/" tag={Link} nav>
+                                            Home
+                                        </NavLink>
                                     </UncontrolledDropdown>
                                     <UncontrolledDropdown nav>
                                         <DropdownToggle nav>
@@ -234,12 +233,9 @@ class DemoNavbar extends React.Component {
                                             </DropdownItem>
                                         </DropdownMenu>
                                     </UncontrolledDropdown>
-                                    <UncontrolledDropdown nav>
-                                        <DropdownToggle nav>
-                                            <i className="ni ni-collection d-lg-none mr-1"/>
-                                            <span className="nav-link-inner--text">Some Cases Handled</span>
-                                        </DropdownToggle>
-                                    </UncontrolledDropdown>
+                                    <NavLink to="/cases-handled" tag={Link} nav>
+                                        Some Cases Handled
+                                    </NavLink>
                                     <UncontrolledDropdown nav>
                                         <DropdownToggle nav>
                                             <i className="ni ni-collection d-lg-none mr-1"/>

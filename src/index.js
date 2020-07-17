@@ -28,6 +28,8 @@ import Landing from "views/examples/Landing.js";
 import Login from "views/examples/Login.js";
 import Profile from "views/examples/Profile.js";
 import Register from "views/examples/Register.js";
+import CasesHnadled from "./views/examples/CasesHandled";
+import CasesHandled from "./views/examples/CasesHandled";
 
 ReactDOM.render(
   <BrowserRouter>
@@ -40,9 +42,9 @@ ReactDOM.render(
       />
       <Route path="/login-page" exact render={props => <Login {...props} />} />
       <Route
-        path="/profile-page"
+        path="/cases-handled"
         exact
-        render={props => <Profile {...props} />}
+        render={props => <CasesHandled {...props} />}
       />
       <Route
         path="/register-page"
