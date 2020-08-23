@@ -27,7 +27,7 @@ class Advocates extends React.Component {
             <>
                 <section
                     className="section section-components pb-0"
-                    id="section-components"
+                    id="advocates"
                 >
                     <Container>
                         <Row className="justify-content-center">
@@ -37,12 +37,14 @@ class Advocates extends React.Component {
                                     <span>Advocates</span>
                                 </h2>
                                 <Card className="shadow">
-                                  {/*  <CardImg  alt="..."
-                                              className="img-fluid rounded-circle shadow"
-                                              src={require("assets/img/theme/team-2-800x800.jpg")}
-                                              style={{ width: "150px" }}>
-                                    </CardImg>*/}
                                     <CardBody>
+                                        <CardImg  alt="..."
+                                                  className="img-fluid rounded-circle shadow"
+                                                  src={require("assets/img/spa/bens.jpeg")}
+                                                  style={{ width: "150px",   maxHeight: "150px",
+                                                      overflow: "hidden" }}>
+                                        </CardImg>
+                                        <p> </p>
                                         <small className="text-uppercase text-muted font-weight-bold">
                                             Ben Makasi Simiyu
                                         </small>
@@ -100,6 +102,13 @@ class Advocates extends React.Component {
                                 </p>
                                 <Card className="shadow">
                                     <CardBody>
+                                        <CardImg  alt="..."
+                                                  className="img-fluid rounded-circle shadow"
+                                                  src={require("assets/img/spa/daisyt.jpeg")}
+                                                  style={{ width: "150px",   maxHeight: "150px",
+                                                      overflow: "hidden" }}>
+                                        </CardImg>
+                                        <p> </p>
                                         <small className="text-uppercase text-muted font-weight-bold">
                                             Tessy D. W. Nabalayo
                                         </small>
@@ -120,6 +129,13 @@ class Advocates extends React.Component {
                                 </p>
                                 <Card className="shadow">
                                     <CardBody>
+                                        <CardImg  alt="..."
+                                                  className="img-fluid rounded-circle shadow"
+                                                  src={require("assets/img/spa/elaine.jpeg")}
+                                                  style={{ width: "150px",   maxHeight: "150px",
+                                                      overflow: "hidden" }}>
+                                        </CardImg>
+                                        <p> </p>
                                         <small className="text-uppercase text-muted font-weight-bold">
                                             Elaine Wahito Gathimba
                                         </small>
@@ -139,6 +155,13 @@ class Advocates extends React.Component {
                                 </p>
                                 <Card className="shadow">
                                     <CardBody>
+                                        <CardImg  alt="..."
+                                                  className="img-fluid rounded-circle shadow"
+                                                  src={require("assets/img/spa/tracy.jpeg")}
+                                                  style={{ width: "150px",   maxHeight: "150px",
+                                                      overflow: "hidden" }}>
+                                        </CardImg>
+                                        <p> </p>
                                         <small className="text-uppercase text-muted font-weight-bold">
                                             Tracy Wagasa Shirao
                                         </small>
@@ -156,6 +179,13 @@ class Advocates extends React.Component {
                                 </p>
                                 <Card className="shadow">
                                     <CardBody>
+                                        <CardImg  alt="..."
+                                                  className="img-fluid rounded-circle shadow"
+                                                  src={require("assets/img/spa/jamesj.jpeg")}
+                                                  style={{ width: "150px",   maxHeight: "150px",
+                                                      overflow: "hidden" }}>
+                                        </CardImg>
+                                        <p> </p>
                                         <small className="text-uppercase text-muted font-weight-bold">
                                             James Juma
                                         </small>

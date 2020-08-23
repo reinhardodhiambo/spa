@@ -39,7 +39,7 @@ class Contact extends React.Component {
     render() {
         return (
             <>
-                <section className="section section-shaped">
+                <section className="section section-shaped" id="contact">
                     <div className="shape shape-style-1 shape-default">
                         <span/>
                         <span/>

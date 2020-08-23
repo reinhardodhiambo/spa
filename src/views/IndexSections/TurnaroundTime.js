@@ -26,7 +26,7 @@ class TurnaroundTime extends React.Component {
       <>
         <section
           className="section section-components pb-0 bg-secondary"
-          id="section-components"
+          id="turnaround_time"
         >
           <Container>
             <Row className="justify-content-center">

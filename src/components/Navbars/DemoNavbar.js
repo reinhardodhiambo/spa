@@ -19,6 +19,7 @@ import React from "react";
 import {Link} from "react-router-dom";
 // JavaScript plugin that hides or shows a component based on your scroll
 import Headroom from "headroom.js";
+//import {NavHashLink as NavLink} from 'react-router-hash-link';
 // reactstrap components
 import {
     Button,
@@ -30,8 +31,8 @@ import {
     Media,
     NavbarBrand,
     Navbar,
-    NavItem,
     NavLink,
+    NavItem,
     Nav,
     Container,
     Row,
@@ -72,16 +73,16 @@ class DemoNavbar extends React.Component {
                         expand="lg"
                         id="navbar-main"
                     >
-                        <img className="bannerHeight"
+                        {/* <img className="bannerHeight"
                              alt="..."
                              src={require("assets/img/brand/splogo.jpeg")}
-                        />
+                        />*/}
                         <Container>
-                            <NavbarBrand className="mr-lg-5" to="/" tag={Link}>
-                                {/* <img
-                  alt="..."
-                  src={require("assets/img/brand/argon-react-white.png")}
-                />*/}
+                            <NavbarBrand className="mr-lg-10" href="/#">
+                                <img
+                                    alt="..."
+                                    src={require("assets/img/brand/splogo.jpeg")}
+                                />
                             </NavbarBrand>
                             <button className="navbar-toggler" id="navbar_global">
                                 <span className="navbar-toggler-icon"/>
@@ -110,14 +111,14 @@ class DemoNavbar extends React.Component {
                                 </div>
                                 <Nav className="navbar-nav-hover align-items-lg-center" navbar>
                                     <UncontrolledDropdown nav>
-                                        <NavLink to="/" tag={Link} nav>
-                                            Home
+                                        <NavLink to="/">
+                                            HOME
                                         </NavLink>
                                     </UncontrolledDropdown>
                                     <UncontrolledDropdown nav>
                                         <DropdownToggle nav>
                                             <i className="ni ni-ui-04 d-lg-none mr-1"/>
-                                            <span className="nav-link-inner--text">About Us</span>
+                                            <span className="nav-link-inner--text">ABOUT US</span>
                                         </DropdownToggle>
                                         <DropdownMenu className="dropdown-menu-xl">
                                             <div className="dropdown-menu-inner">
@@ -131,9 +132,9 @@ class DemoNavbar extends React.Component {
                                                         <i className="ni ni-spaceship"/>
                                                     </div>
                                                     <Media body className="ml-3">
-                                                        <h6 className="heading text-primary mb-md-1">
-                                                            Mission Statement
-                                                        </h6>
+                                                        <NavLink href="/#mission_statement"><h6 className="heading text-primary mb-md-1">
+                                                            MISSION STATEMENT
+                                                        </h6></NavLink>
                                                     </Media>
                                                 </Media>
                                                 <Media
@@ -141,15 +142,21 @@ class DemoNavbar extends React.Component {
                                                     href="/"
                                                     target="_blank"
                                                 >
+
                                                     <div
                                                         className="icon icon-shape bg-gradient-success rounded-circle text-white">
                                                         <i className="ni ni-palette"/>
                                                     </div>
                                                     <Media body className="ml-3">
-                                                        <h6 className="heading text-primary mb-md-1">
-                                                            Professional Training
-                                                        </h6>
+                                                        <NavLink href="/#professional_training">
+                                                            <h6 className="heading text-primary mb-md-1">
+                                                                PROFESSIONAL TRAINING
+                                                            </h6>
+                                                        </NavLink>
+
                                                     </Media>
+
+
                                                 </Media>
                                                 <Media
                                                     className="d-flex align-items-center"
@@ -161,9 +168,9 @@ class DemoNavbar extends React.Component {
                                                         <i className="ni ni-ui-04"/>
                                                     </div>
                                                     <Media body className="ml-3">
-                                                        <h5 className="heading text-warning mb-md-1">
-                                                            Facilities/Equipments
-                                                        </h5>
+                                                        <NavLink href="/#facilities"><h5 className="heading text-warning mb-md-1">
+                                                            FACILITIES/EQUIPMENTS
+                                                        </h5></NavLink>
                                                     </Media>
                                                 </Media>
                                                 <Media
@@ -176,9 +183,9 @@ class DemoNavbar extends React.Component {
                                                         <i className="ni ni-time-alarm"/>
                                                     </div>
                                                     <Media body className="ml-3">
-                                                        <h5 className="heading text-warning mb-md-1">
-                                                            Turnaround Time
-                                                        </h5>
+                                                        <NavLink href="/#turnaround_time"><h5 className="heading text-warning mb-md-1">
+                                                            TURNAROUND TIME
+                                                        </h5></NavLink>
                                                     </Media>
                                                 </Media>
                                             </div>
@@ -187,13 +194,13 @@ class DemoNavbar extends React.Component {
                                     <UncontrolledDropdown nav>
                                         <DropdownToggle nav>
                                             <i className="ni ni-collection d-lg-none mr-1"/>
-                                            <span className="nav-link-inner--text">Our People</span>
+                                            <span className="nav-link-inner--text">OUR PEOPLE</span>
                                         </DropdownToggle>
                                         <DropdownMenu>
-                                            <DropdownItem to="/" tag={Link}>
+                                            <DropdownItem href="/#advocates" >
                                                 Advocates
                                             </DropdownItem>
-                                            <DropdownItem to="/" tag={Link}>
+                                            <DropdownItem href="/#support_staff">
                                                 Support Staff
                                             </DropdownItem>
                                         </DropdownMenu>
@@ -201,47 +208,47 @@ class DemoNavbar extends React.Component {
                                     <UncontrolledDropdown nav>
                                         <DropdownToggle nav>
                                             <i className="ni ni-collection d-lg-none mr-1"/>
-                                            <span className="nav-link-inner--text">Practice Areas</span>
+                                            <span className="nav-link-inner--text">PRACTICE AREAS</span>
                                         </DropdownToggle>
                                         <DropdownMenu>
-                                            <DropdownItem to="/" tag={Link}>
+                                            <DropdownItem href="/#Public_Law">
                                                 Public Law and Civil Litigation
                                             </DropdownItem>
-                                            <DropdownItem to="/" tag={Link}>
+                                            <DropdownItem href="/#Corporate_Structuring">
                                                 Corporate Structuring, Mergers and Acquisitions &Regulatory Advice
                                             </DropdownItem>
-                                            <DropdownItem to="/" tag={Link}>
+                                            <DropdownItem href="/#Banking_and">
                                                 Banking and Finance
                                             </DropdownItem>
-                                            <DropdownItem to="/" tag={Link}>
+                                            <DropdownItem href="/#Conveyancing">
                                                 Conveyancing
                                             </DropdownItem>
-                                            <DropdownItem to="/" tag={Link}>
+                                            <DropdownItem href="/#Employment">
                                                 Employment, Labour and Industrial Disputes
                                             </DropdownItem>
-                                            <DropdownItem to="/" tag={Link}>
-                                                Arbitration andAlternative Dispute Resolution
+                                            <DropdownItem href="/#Arbitration_and">
+                                                Arbitration and Alternative Dispute Resolution
                                             </DropdownItem>
-                                            <DropdownItem to="/" tag={Link}>
+                                            <DropdownItem href="/#Procurement_Disputes">
                                                 Procurement Disputes
                                             </DropdownItem>
-                                            <DropdownItem to="/" tag={Link}>
+                                            <DropdownItem href="/#Legal_Audits">
                                                 Legal Audits
                                             </DropdownItem>
-                                            <DropdownItem to="/" tag={Link}>
+                                            <DropdownItem href="/#Taxation">
                                                 Taxation
                                             </DropdownItem>
                                         </DropdownMenu>
                                     </UncontrolledDropdown>
                                     <NavLink to="/cases-handled" tag={Link} nav>
-                                        Some Cases Handled
+                                        SOME CASES HANDLED
                                     </NavLink>
-                                    <UncontrolledDropdown nav>
-                                        <DropdownToggle nav>
-                                            <i className="ni ni-collection d-lg-none mr-1"/>
-                                            <span className="nav-link-inner--text">Customer Care</span>
-                                        </DropdownToggle>
-                                    </UncontrolledDropdown>
+                                    <NavLink  href="/#professional_training"  nav>
+                                        CUSTOMER CARE
+                                    </NavLink>
+                                    <NavLink  href="/#contact"  nav>
+                                        CONTACT US
+                                    </NavLink>
                                 </Nav>
                             </UncontrolledCollapse>
                         </Container>

@@ -26,7 +26,7 @@ class PracticeArea extends React.Component {
             <>
                 <section
                     className="section section-components pb-0"
-                    id="section-components"
+                    id="practice_area"
                 >
                     <Container>
                         <Row className="justify-content-center">
@@ -35,8 +35,8 @@ class PracticeArea extends React.Component {
                                 <h2 className="text-uppercase  font-weight-bold">
                                     <span>Practice Area</span>
                                 </h2>
-                                <small className="text-uppercase font-weight-bold">
-                                    public Law and Civil Litigation
+                                <small className="text-uppercase font-weight-bold" id="Public_Law">
+                                    Public Law and Civil Litigation
                                 </small>
                                 <p className="lead">
                                     The firm (through the Advocates) has a wide, in-depth and versatile grounding and
@@ -58,7 +58,7 @@ class PracticeArea extends React.Component {
                                     respected practitioners in the Subordinate Courts, the High Courts, the Court of
                                     Appeal and the Supreme Court of Kenya.
                                 </p>
-                                <small className="text-uppercase  font-weight-bold">
+                                <small className="text-uppercase  font-weight-bold" id="Corporate_Structuring">
                                     <span>Corporate Structuring, Mergers and Acquisitions &Regulatory Advice</span>
                                 </small>
                                 <p className="lead">
@@ -68,7 +68,7 @@ class PracticeArea extends React.Component {
                                     solutions on corporate restructurings, mergers and acquisitions, capital increases
                                     and reductions, regulator’s advice and approvals as well as business licensing.
                                 </p>
-                                <small className="text-uppercase  font-weight-bold">
+                                <small className="text-uppercase  font-weight-bold" id="Banking_and">
                                     <span>Banking and Finance</span>
                                 </small>
                                 <p className="lead">
@@ -85,7 +85,7 @@ class PracticeArea extends React.Component {
                                     centers, office buildings and industrial buildings.
 
                                 </p>
-                                <small className="text-uppercase  font-weight-bold">
+                                <small className="text-uppercase  font-weight-bold" id="Intellectual_Property">
                                     <span>Intellectual Property</span>
                                 </small>
                                 <p className="lead">
@@ -100,7 +100,7 @@ class PracticeArea extends React.Component {
                                     Additionally, we advise companies and organizations on copyright and design right,
                                     confidential information disputes and trade secrets.
                                 </p>
-                                <small className="text-uppercase  font-weight-bold">
+                                <small className="text-uppercase  font-weight-bold" id="Conveyancing">
                                     <span>Conveyancing</span>
                                 </small>
                                 <p className="lead">
@@ -116,7 +116,7 @@ class PracticeArea extends React.Component {
                                     drafting of trust deeds.
 
                                 </p>
-                                <small className="text-uppercase  font-weight-bold">
+                                <small className="text-uppercase  font-weight-bold" id="Employment">
                                     <span>Employment, Labour and Industrial Disput</span>
                                 </small>
                                 <p className="lead">
@@ -125,8 +125,8 @@ class PracticeArea extends React.Component {
                                     established a formidable presence in this area of practice which continues to
                                     expand.
                                 </p>
-                                <small className="text-uppercase  font-weight-bold">
-                                    <span>Arbitration andAlternative Dispute Resolution</span>
+                                <small className="text-uppercase  font-weight-bold" id="Arbitration_and">
+                                    <span>Arbitration and Alternative Dispute Resolution</span>
                                 </small>
                                 <p className="lead">
                                     In the recent past, alternative dispute resolution mechanisms such as
@@ -134,7 +134,7 @@ class PracticeArea extends React.Component {
                                     been taken by the firm very seriously. Indeed, the firm represents various corporate
                                     clients in multi million transactions in various arbitration fora.
                                 </p>
-                                <small className="text-uppercase  font-weight-bold">
+                                <small className="text-uppercase  font-weight-bold" id="Procurement_Disputes">
                                     <span>Procurement Disputes</span>
                                 </small>
                                 <p className="lead">
@@ -146,7 +146,7 @@ class PracticeArea extends React.Component {
                                     Procurement Appeals Review Board as well as the ordinary courts of law whenever such
                                     matters are taken there
                                 </p>
-                                <small className="text-uppercase  font-weight-bold">
+                                <small className="text-uppercase  font-weight-bold" id="Legal_Audits">
                                     <span>Legal Audits</span>
                                 </small>
                                 <p className="lead">
@@ -175,7 +175,7 @@ class PracticeArea extends React.Component {
                                     Advocates has invested heavily in this area with a view of offering service in this
                                     specialized practice area to various clients.
                                 </p>
-                                <small className="text-uppercase  font-weight-bold">
+                                <small className="text-uppercase  font-weight-bold" id="Taxation">
                                     <span>Taxation</span>
                                 </small>
                                 <p className="lead">

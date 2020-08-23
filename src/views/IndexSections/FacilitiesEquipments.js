@@ -26,7 +26,7 @@ class FacilitiesEquipments extends React.Component {
       <>
         <section
           className="section section-components pb-0"
-          id="section-components"
+          id="facilities"
         >
           <Container>
             <Row className="justify-content-center">

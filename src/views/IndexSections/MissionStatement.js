@@ -26,7 +26,7 @@ class MissionStatement extends React.Component {
       <>
         <section
           className="section section-components pb-0"
-          id="section-components"
+          id="mission_statement"
         >
           <Container>
             <Row className="justify-content-center">
